@@ -76,6 +76,18 @@ for i in range(2,10):
         print(i," X " , j," = ", i*j)
     #print(i*j, end = " ")
 
+# 설명 : 1번 for문에서 2부터 9까지의 숫자 (range(2,10))가 차례대로 i변수에 대입 된다.
+# i변수 값이 처음 2일때 2번 for문을 만나게 된다. 2번 for문에서 1부터 9까지의 숫자 (range(1,10))가 j변수에 대입되고
+# 그 다음 문장 print(i*j, end=" ")을 수행하게 된다.
+# 그리고 end=""를 넣어 준이유는 해당 결과 값을 출력 할때 다음줄로 넘기지 않고 그 줄에 빈 공백을 주어
+# 계속해서 출력함
 
 
-
+dictonary = {"name":"건조망고",
+             "type" : "당절임",
+             "ingredient":["망고", "설탕", "등등"],
+             "origin" : "필리핀"
+             }
+for key in dictonary:
+    print(key, ":", dictonary[key])
+    print("key : ", key)
